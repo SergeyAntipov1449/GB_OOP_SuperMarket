@@ -1,0 +1,5 @@
+FROM eclipse/ubuntu_jdk8
+COPY ./java ./src
+RUN mkdir ./out
+RUN javac -sourcepath ./src -d out ./src/classes/App.java
+CMD java -classpath ./out classes/App

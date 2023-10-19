@@ -1,4 +1,4 @@
-import classes.*;
+package classes;
 import Interfaces.iActorBehaviour;
 
 public class App {
